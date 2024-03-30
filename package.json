@@ -3,15 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3014",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3014",
     "lint": "next lint"
   },
   "dependencies": {
+    "bootstrap": "^5.3.2",
+    "next": "14.0.4",
     "react": "^18",
+    "react-bootstrap": "^2.9.2",
     "react-dom": "^18",
-    "next": "14.0.4"
+    "react-icons": "^5.0.1",
+    "react-multi-carousel": "^2.8.4"
   },
   "devDependencies": {
     "eslint": "^8",

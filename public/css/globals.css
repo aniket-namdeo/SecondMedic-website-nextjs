@@ -1,0 +1,180 @@
+@font-face {
+  font-family: PelitaStdBold;
+  src: url(../fonts/PelitaStdBold.otf);
+  font-display: swap;
+}
+@font-face {
+  font-family: PelitaStdRegular;
+  src: url(../fonts/PelitaStdRegular.otf);
+  font-display: swap;
+}
+
+:root {
+  --greencolor: #19838a;
+  --darkgreencolor: #14747a;
+  --bodycolor: #343434;
+  --blackcolor: #000000;
+  --whitecolor: #ffffff;
+  --secondarycolor: #434343;
+
+  --fontBold: "PelitaStdBold", Arial, sans-serif;
+  --fontRegular: "PelitaStdRegular", Arial, sans-serif;
+}
+
+/* Common CSS Start */
+body {
+  color: var(--bodycolor);
+  font-family: var(--fontRegular);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--fontBold);
+  color: var(--blackcolor);
+}
+@media (min-width: 1300px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1240px;
+  }
+}
+.btn {
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: var(--fontBold);
+  font-size: 14px;
+  outline: 0;
+  min-width: 135px;
+  transition: all 0.3s 0s linear;
+}
+.btn.with-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.web-btn,
+.btn-primary {
+  background-color: var(--greencolor) !important;
+  border-color: var(--greencolor);
+  color: var(--whitecolor);
+}
+.web-btn:hover,
+.btn-primary:hover {
+  background-color: var(--darkgreencolor) !important;
+  border-color: var(--darkgreencolor);
+  color: var(--whitecolor);
+  box-shadow: none;
+}
+.web-btn2 {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  color: var(--bodycolor);
+}
+.web-btn2:hover {
+  background-color: var(--bodycolor) !important;
+  color: var(--whitecolor);
+}
+.section-padding {
+  padding: 60px 0px;
+}
+.web-clr {
+  color: var(--greencolor);
+}
+.bg-light {
+  background-color: #f7f7f7;
+}
+.section-heading {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+.section-heading.with-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.react-multi-carousel-list {
+  margin-right: -20px;
+  padding-bottom: 30px;
+}
+.react-multi-carousel-list .slider-item {
+  margin-right: 20px;
+}
+.react-multiple-carousel__arrow {
+  background-color: var(--greencolor) !important;
+  padding: 0px;
+  display: block;
+}
+.react-multiple-carousel__arrow::before {
+  width: 48px !important;
+  height: 48px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 15px !important;
+  padding-top: 2px;
+}
+.react-multi-carousel-dot {
+  display: none;
+}
+.react-multi-carousel-dot button {
+  width: 8px;
+  height: 8px;
+  background-color: var(--bodycolor) !important;
+  border-color: var(--bodycolor) !important;
+  opacity: 0.2 !important;
+}
+.react-multi-carousel-dot--active button {
+  background-color: var(--greencolor) !important;
+  border-color: var(--greencolor) !important;
+  opacity: 1 !important;
+}
+.react-multiple-carousel__arrow--left {
+  left: 10px !important;
+}
+.react-multiple-carousel__arrow--right {
+  right: 33px !important;
+}
+@media (max-width: 992px) {
+  .section-padding {
+    padding: 30px 0px;
+  }
+  .section-heading {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .react-multiple-carousel__arrow {
+    display: none;
+  }
+  .react-multi-carousel-dot {
+    display: block;
+  }
+  .section-heading.with-btn {
+    display: block;
+  }
+  .section-heading.with-btn span {
+    display: block;
+  }
+  .section-heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .section-heading.with-btn .btn {
+    margin-top: 15px;
+  }
+  .react-multi-carousel-list {
+    margin-right: -10px;
+  }
+  .react-multi-carousel-list .slider-item {
+    margin-right: 10px;
+  }
+}
+/* Common CSS End */

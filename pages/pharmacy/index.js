@@ -7,12 +7,11 @@ import Image from "next/image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { FaArrowRight } from "react-icons/fa6";
-import { MdOutlineMedicalServices } from "react-icons/md";
-import { IoMdGlobe } from "react-icons/io";
-import { HiOutlineMailOpen, HiOutlinePhone } from "react-icons/hi";
+import { HiOutlinePhone } from "react-icons/hi";
 import { FaWhatsapp } from "react-icons/fa";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import { FiHeart } from "react-icons/fi";
+import CommonButton from "../components/button";
 
 export default function Home() {
   const bannerslider = {
@@ -122,9 +121,11 @@ export default function Home() {
               <div className="right-box">
                 <div className="prescription-box">
                   <h4>Order with prescription</h4>
-                  <Link href="#" className="btn web-btn">
-                    Upload Prescription
-                  </Link>
+                  <CommonButton
+                    buttonName="Upload Prescription"
+                    buttonClass="btn web-btn"
+                    buttonLink="#"
+                  />
                 </div>
                 <hr className="d-none d-md-block" />
                 <h4>Difficulty on finding products?</h4>
@@ -167,9 +168,12 @@ export default function Home() {
             <Col>
               <h1 className="section-heading with-btn">
                 <div className="heading">Secondmedic Pharmacy</div>
-                <Link href="#" className="btn web-btn2 with-icon">
-                  View All <FaArrowRight />
-                </Link>
+                <CommonButton
+                  buttonName="View All"
+                  buttonIcon={<FaArrowRight />}
+                  buttonClass="btn web-btn2 with-icon"
+                  buttonLink="#"
+                />
               </h1>
               <Carousel
                 responsive={categoryslider}
@@ -558,9 +562,12 @@ export default function Home() {
             <Col>
               <h2 className="section-heading with-btn">
                 <div className="heading">Popular Products</div>
-                <Link href="#" className="btn web-btn2 with-icon">
-                  View All <FaArrowRight />
-                </Link>
+                <CommonButton
+                  buttonName="View All"
+                  buttonIcon={<FaArrowRight />}
+                  buttonClass="btn web-btn2 with-icon"
+                  buttonLink="#"
+                />
               </h2>
               <Carousel
                 responsive={productslider}
@@ -607,9 +614,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -652,9 +661,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -697,9 +708,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -742,9 +755,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -787,9 +802,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -832,9 +849,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -851,9 +870,12 @@ export default function Home() {
                 <div className="heading">
                   Top deals of pain relief and cough & cold
                 </div>
-                <Link href="#" className="btn web-btn2 with-icon">
-                  View All <FaArrowRight />
-                </Link>
+                <CommonButton
+                  buttonName="View All"
+                  buttonIcon={<FaArrowRight />}
+                  buttonClass="btn web-btn2 with-icon"
+                  buttonLink="#"
+                />
               </h2>
               <Carousel
                 responsive={productslider}
@@ -900,9 +922,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -945,9 +969,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -990,9 +1016,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -1035,9 +1063,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -1080,9 +1110,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -1125,9 +1157,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -1142,9 +1176,12 @@ export default function Home() {
             <Col>
               <h2 className="section-heading with-btn">
                 <div className="heading">Medical Equipment</div>
-                <Link href="#" className="btn web-btn2 with-icon">
-                  View All <FaArrowRight />
-                </Link>
+                <CommonButton
+                  buttonName="View All"
+                  buttonIcon={<FaArrowRight />}
+                  buttonClass="btn web-btn2 with-icon"
+                  buttonLink="#"
+                />
               </h2>
               <Carousel
                 responsive={productslider}
@@ -1191,9 +1228,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -1236,9 +1275,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -1281,9 +1322,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -1326,9 +1369,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -1371,9 +1416,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -1416,9 +1463,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -1433,9 +1482,12 @@ export default function Home() {
             <Col>
               <h2 className="section-heading with-btn">
                 <div className="heading">Diabetic</div>
-                <Link href="#" className="btn web-btn2 with-icon">
-                  View All <FaArrowRight />
-                </Link>
+                <CommonButton
+                  buttonName="View All"
+                  buttonIcon={<FaArrowRight />}
+                  buttonClass="btn web-btn2 with-icon"
+                  buttonLink="#"
+                />
               </h2>
               <Carousel
                 responsive={productslider}
@@ -1482,9 +1534,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -1527,9 +1581,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -1572,9 +1628,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -1617,9 +1675,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -1662,9 +1722,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -1707,9 +1769,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -1724,9 +1788,12 @@ export default function Home() {
             <Col>
               <h2 className="section-heading with-btn">
                 <div className="heading">Immunity</div>
-                <Link href="#" className="btn web-btn2 with-icon">
-                  View All <FaArrowRight />
-                </Link>
+                <CommonButton
+                  buttonName="View All"
+                  buttonIcon={<FaArrowRight />}
+                  buttonClass="btn web-btn2 with-icon"
+                  buttonLink="#"
+                />
               </h2>
               <Carousel
                 responsive={productslider}
@@ -1773,9 +1840,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -1818,9 +1887,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -1863,9 +1934,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -1908,9 +1981,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -1953,9 +2028,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -1998,9 +2075,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -2015,9 +2094,12 @@ export default function Home() {
             <Col>
               <h2 className="section-heading with-btn">
                 <div className="heading">Season wise</div>
-                <Link href="#" className="btn web-btn2 with-icon">
-                  View All <FaArrowRight />
-                </Link>
+                <CommonButton
+                  buttonName="View All"
+                  buttonIcon={<FaArrowRight />}
+                  buttonClass="btn web-btn2 with-icon"
+                  buttonLink="#"
+                />
               </h2>
               <Carousel
                 responsive={productslider}
@@ -2064,9 +2146,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -2109,9 +2193,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -2154,9 +2240,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -2199,9 +2287,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -2244,9 +2334,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -2289,9 +2381,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -2306,9 +2400,12 @@ export default function Home() {
             <Col>
               <h2 className="section-heading with-btn">
                 <div className="heading">In the spotlight</div>
-                <Link href="#" className="btn web-btn2 with-icon">
-                  View All <FaArrowRight />
-                </Link>
+                <CommonButton
+                  buttonName="View All"
+                  buttonIcon={<FaArrowRight />}
+                  buttonClass="btn web-btn2 with-icon"
+                  buttonLink="#"
+                />
               </h2>
               <Carousel
                 responsive={productslider}
@@ -2355,9 +2452,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -2400,9 +2499,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -2445,9 +2546,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -2490,9 +2593,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -2535,9 +2640,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -2580,9 +2687,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -2597,9 +2706,12 @@ export default function Home() {
             <Col>
               <h2 className="section-heading with-btn">
                 <div className="heading">Top Ayurvedic</div>
-                <Link href="#" className="btn web-btn2 with-icon">
-                  View All <FaArrowRight />
-                </Link>
+                <CommonButton
+                  buttonName="View All"
+                  buttonIcon={<FaArrowRight />}
+                  buttonClass="btn web-btn2 with-icon"
+                  buttonLink="#"
+                />
               </h2>
               <Carousel
                 responsive={productslider}
@@ -2646,9 +2758,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -2691,9 +2805,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -2736,9 +2852,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -2781,9 +2899,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -2826,9 +2946,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -2871,9 +2993,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -2888,9 +3012,12 @@ export default function Home() {
             <Col>
               <h2 className="section-heading with-btn">
                 <div className="heading">Super specialty drugs</div>
-                <Link href="#" className="btn web-btn2 with-icon">
-                  View All <FaArrowRight />
-                </Link>
+                <CommonButton
+                  buttonName="View All"
+                  buttonIcon={<FaArrowRight />}
+                  buttonClass="btn web-btn2 with-icon"
+                  buttonLink="#"
+                />
               </h2>
               <Carousel
                 responsive={productslider}
@@ -2937,9 +3064,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -2982,9 +3111,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -3027,9 +3158,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -3072,9 +3205,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -3117,9 +3252,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>
@@ -3162,9 +3299,11 @@ export default function Home() {
                         </small>
                         <span> ₹408.50</span>
                       </h4>
-                      <a href="#" className="btn web-btn w-100">
-                        View Details
-                      </a>
+                      <CommonButton
+                        buttonName="View Details"
+                        buttonClass="btn web-btn w-100"
+                        buttonLink="#"
+                      />
                     </div>
                   </div>
                 </div>

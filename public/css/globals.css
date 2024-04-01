@@ -44,6 +44,13 @@ h6 {
     max-width: 1240px;
   }
 }
+a {
+  color: var(--bodycolor);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--greencolor);
+}
 .btn {
   border-radius: 5px;
   padding: 10px 20px;
@@ -84,6 +91,9 @@ h6 {
 .section-padding {
   padding: 60px 0px;
 }
+.small-section-padding {
+  padding: 40px 0px;
+}
 .web-clr {
   color: var(--greencolor);
 }
@@ -99,10 +109,14 @@ h6 {
   align-items: center;
   justify-content: space-between;
 }
-
+.section-heading.with-btn .heading {
+  width: 70%;
+}
+.small-section-padding .section-heading {
+  margin-bottom: 30px;
+}
 .react-multi-carousel-list {
   margin-right: -20px;
-  padding-bottom: 30px;
 }
 .react-multi-carousel-list .slider-item {
   margin-right: 20px;
@@ -125,8 +139,8 @@ h6 {
   display: none;
 }
 .react-multi-carousel-dot button {
-  width: 8px;
-  height: 8px;
+  width: 8px !important;
+  height: 8px !important;
   background-color: var(--bodycolor) !important;
   border-color: var(--bodycolor) !important;
   opacity: 0.2 !important;
@@ -142,12 +156,31 @@ h6 {
 .react-multiple-carousel__arrow--right {
   right: 33px !important;
 }
+.breadcrumb-section {
+  padding: 10px 0px;
+}
+.breadcrumb-section .breadcrumb {
+  margin: 0px;
+  font-family: var(--fontBold);
+}
+.breadcrumb-section .breadcrumb a {
+  color: var(--bodycolor);
+  text-decoration: none;
+}
+
 @media (max-width: 992px) {
   .section-padding {
     padding: 30px 0px;
   }
+  .small-section-padding {
+    padding: 20px 0px;
+  }
   .section-heading {
+    font-size: 20px;
     margin-bottom: 20px;
+  }
+  .small-section-padding .section-heading {
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 767px) {
@@ -157,24 +190,27 @@ h6 {
   .react-multi-carousel-dot {
     display: block;
   }
-  .section-heading.with-btn {
-    display: block;
-  }
-  .section-heading.with-btn span {
-    display: block;
-  }
-  .section-heading {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
   .section-heading.with-btn .btn {
-    margin-top: 15px;
+    min-width: 100px;
   }
   .react-multi-carousel-list {
     margin-right: -10px;
+    padding-bottom: 30px;
   }
   .react-multi-carousel-list .slider-item {
     margin-right: 10px;
+  }
+  .banner-slider.react-multi-carousel-list {
+    margin-right: 0px;
+  }
+  .banner-slider.react-multi-carousel-list .slider-item {
+    margin-right: 0px;
+  }
+  .breadcrumb-section {
+    display: none;
+  }
+  .section-heading.with-btn .heading {
+    width: 60%;
   }
 }
 /* Common CSS End */

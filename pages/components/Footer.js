@@ -21,7 +21,7 @@ export default function Footer() {
         <section className="new-footer-top">
           <Container>
             <Row>
-              <Col md={5}>
+              <Col lg={5} md={12}>
                 <Link href="#">
                   <Image
                     src="/images/logo.webp"
@@ -48,7 +48,7 @@ export default function Footer() {
                   </Button>
                 </InputGroup>
               </Col>
-              <Col md={2} xs={6} className="ps-md-4">
+              <Col lg={2} md={4} xs={6} className="ps-lg-4">
                 <p className="footer-heading">Useful Links</p>
                 <ul>
                   <li>
@@ -77,7 +77,7 @@ export default function Footer() {
                   </li>
                 </ul>
               </Col>
-              <Col md={2} xs={6} className="ps-md-4">
+              <Col lg={2} md={4} xs={6} className="ps-lg-4">
                 <p className="footer-heading">Quick Links</p>
                 <ul>
                   <li>
@@ -109,7 +109,7 @@ export default function Footer() {
                   </li>
                 </ul>
               </Col>
-              <Col md={3}>
+              <Col lg={3} md={4}>
                 <p className="footer-heading">Contact Us</p>
                 <ul className="contact-info">
                   <li>

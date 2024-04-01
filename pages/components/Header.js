@@ -14,6 +14,7 @@ import { FiShoppingCart, FiPhoneCall, FiMenu } from "react-icons/fi";
 import Link from "next/link";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { HiOutlineMailOpen, HiOutlinePhone } from "react-icons/hi";
+import { FiHeart } from "react-icons/fi";
 
 export default function Header() {
   const [show, setShow] = useState(false);
@@ -26,7 +27,7 @@ export default function Header() {
         <section className="header-top">
           <Navbar expand="lg">
             <Container>
-              <Navbar.Brand href="#">
+              <Navbar.Brand href="/">
                 <Image
                   src="/images/logo.webp"
                   width={158}
@@ -35,6 +36,9 @@ export default function Header() {
                 />
               </Navbar.Brand>
               <div className="mobile-header-icons d-flex d-lg-none">
+                <Link href="#">
+                  <FiHeart />
+                </Link>
                 <Link href="#">
                   <FiShoppingCart />
                   <span className="badge">2</span>
@@ -68,7 +72,7 @@ export default function Header() {
                     </NavDropdown.Item>
                   </NavDropdown>
 
-                  <Nav.Link href="#">Pharmacy</Nav.Link>
+                  <Nav.Link href="pharmacy">Pharmacy</Nav.Link>
 
                   <Nav.Link href="#">Ask A Doctor</Nav.Link>
 
@@ -133,6 +137,11 @@ export default function Header() {
               </Col>
               <Col lg={6}>
                 <ul className="header-icons d-none d-lg-flex">
+                  <li>
+                    <Link href="#">
+                      <FiHeart />
+                    </Link>
+                  </li>
                   <li>
                     <Link href="#">
                       <FiShoppingCart />
@@ -251,7 +260,7 @@ export default function Header() {
               <NavDropdown.Item href="#">Genetic Testing</NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link href="#">Pharmacy</Nav.Link>
+            <Nav.Link href="pharmacy">Pharmacy</Nav.Link>
 
             <Nav.Link href="#">Ask A Doctor</Nav.Link>
 

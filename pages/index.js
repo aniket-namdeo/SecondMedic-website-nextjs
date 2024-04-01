@@ -17,11 +17,11 @@ export default function Home() {
       items: 5,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1024, min: 767 },
       items: 3,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 767, min: 0 },
       items: 1.5,
     },
   };
@@ -31,11 +31,11 @@ export default function Home() {
       items: 2,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1024, min: 767 },
       items: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 767, min: 0 },
       items: 1,
     },
   };
@@ -45,11 +45,11 @@ export default function Home() {
       items: 4,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1024, min: 767 },
       items: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 767, min: 0 },
       items: 2,
     },
   };
@@ -216,7 +216,7 @@ export default function Home() {
           <Row>
             <Col>
               <h2 className="section-heading with-btn">
-                <div>
+                <div className="heading">
                   <span className="badge">Live</span> Talk To A Doctor Online
                 </div>
                 <Link href="#" className="btn web-btn2 with-icon">
@@ -576,7 +576,7 @@ export default function Home() {
           <Row>
             <Col>
               <h2 className="section-heading with-btn">
-                <div>Health Blogs</div>
+                <div className="heading">Health Blogs</div>
                 <Link href="#" className="btn web-btn2 with-icon">
                   View All <FaArrowRight />
                 </Link>

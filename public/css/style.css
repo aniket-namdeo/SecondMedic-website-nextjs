@@ -878,6 +878,7 @@
   padding: 10px 20px;
   font-size: 15px;
   box-shadow: none;
+  background-color: white;
 }
 .new-design-footer .new-footer-top ul {
   margin: 0;
@@ -1356,3 +1357,131 @@
   }
 }
 /* Pharmacy Products Work End */
+
+/* Pharmacy Listing Work Start */
+.pharmacy-listing .filters .filter-h {
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.pharmacy-listing .filters .filter-list {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  height: 210px;
+}
+.pharmacy-listing .filters .filter-list li {
+  padding-top: 10px;
+}
+.pharmacy-listing .sortby {
+  white-space: nowrap;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .pharmacy-listing {
+    padding-top: 0px;
+  }
+}
+.mobile-sort-and-filter {
+  align-items: center;
+  text-align: center;
+  font-family: var(--fontBold);
+  margin: 0px -12px 20px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+}
+.mobile-sort-and-filter button {
+  width: 50%;
+  border: none;
+  border-right: 1px solid #ddd;
+  background: var(--whitecolor) !important;
+  color: var(--bodycolor);
+  border-radius: 0px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.mobile-sort-and-filter button:hover {
+  background: var(--whitecolor) !important;
+  border: none;
+  border-right: 1px solid #ddd;
+  color: var(--bodycolor);
+}
+.mobile-sort-and-filter button:last-child,
+.mobile-sort-and-filter button:last-child:hover {
+  border: none;
+}
+.filter-menu .offcanvas-header {
+  border-bottom: 1px solid #dee2e6;
+  padding: 15px;
+  font-family: var(--fontBold);
+}
+.filter-menu .offcanvas-header .btn-close {
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+  filter: invert(41%) sepia(30%) saturate(967%) hue-rotate(135deg)
+    brightness(97%) contrast(98%);
+}
+.filter-menu .offcanvas-body {
+  padding: 15px;
+}
+.filter-menu .offcanvas-body .custom-radio {
+  margin: 10px 0px;
+}
+.filter-menu-with-tabs {
+  height: auto !important;
+}
+.filter-menu-with-tabs .offcanvas-body {
+  padding: 0px;
+}
+.filter-menu-with-tabs .pharmacy-filters-mobile {
+  display: flex;
+  align-items: flex-start;
+  border-top: 1px solid #ddd;
+  background-color: #eee;
+}
+.filter-menu-with-tabs .pharmacy-filters-mobile .nav {
+  width: 130px;
+  background-color: #eee;
+  border: none;
+  padding: 0px;
+}
+.filter-menu-with-tabs .pharmacy-filters-mobile .nav .nav-link {
+  width: 100%;
+  display: block;
+  padding: 10px 10px;
+  text-align: left;
+  background-color: transparent;
+  border-radius: 0px;
+  color: var(--bodycolor);
+  border-bottom: 1px solid #ddd;
+  border-left: 3px solid transparent;
+  font-weight: bold;
+}
+.filter-menu-with-tabs .pharmacy-filters-mobile .nav .nav-link.active {
+  background-color: white;
+  color: black;
+  border-left: 3px solid var(--greencolor);
+}
+.filter-menu-with-tabs .pharmacy-filters-mobile .tab-content {
+  width: calc(100% - 127px);
+  height: 100%;
+  background-color: white;
+  height: calc(100vh - 300px);
+  overflow: auto;
+  padding: 0px 15px;
+}
+.filter-menu-with-tabs .modal-footer {
+  flex-wrap: inherit;
+  padding: 10px 15px;
+  justify-content: space-between;
+}
+.filter-menu-with-tabs .modal-footer .btn {
+  width: calc(50% - 7.5px);
+}
+/* Pharmacy Listing Work End */

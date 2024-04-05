@@ -27,14 +27,14 @@ export default function Header() {
         <section className="header-top">
           <Navbar expand="lg">
             <Container>
-              <Navbar.Brand href="/">
+              <Link href="/" className="navbar-brand">
                 <Image
                   src="/images/logo.webp"
                   width={158}
                   height={45}
                   alt="Second Medic"
                 />
-              </Navbar.Brand>
+              </Link>
               <div className="mobile-header-icons d-flex d-lg-none">
                 <Link href="#">
                   <FiHeart />
@@ -43,7 +43,7 @@ export default function Header() {
                   <FiShoppingCart />
                   <span className="badge">2</span>
                 </Link>
-                <Link href="#" onClick={menuShow}>
+                <Link href="" onClick={menuShow}>
                   <FiMenu />
                 </Link>
               </div>
@@ -53,54 +53,74 @@ export default function Header() {
                     title="Consult Doctors"
                     id="navbarScrollingDropdown"
                   >
-                    <NavDropdown.Item href="#">
+                    <Link className="dropdown-item" href="#">
                       Consult Doctors
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#">Doctor Enquiry</NavDropdown.Item>
-                    <NavDropdown.Item href="#">Doctor Listing</NavDropdown.Item>
-                    <NavDropdown.Item href="#">
+                    </Link>
+                    <Link className="dropdown-item" href="#">
+                      Doctor Enquiry
+                    </Link>
+                    <Link className="dropdown-item" href="#">
+                      Doctor Listing
+                    </Link>
+                    <Link className="dropdown-item" href="#">
                       Doctor Registration
-                    </NavDropdown.Item>
+                    </Link>
                   </NavDropdown>
 
                   <NavDropdown title="Lab Test" id="navbarScrollingDropdown2">
-                    <NavDropdown.Item href="#">Lab Test</NavDropdown.Item>
-                    <NavDropdown.Item href="#">Radiology</NavDropdown.Item>
-                    <NavDropdown.Item href="#">PET-CT</NavDropdown.Item>
-                    <NavDropdown.Item href="#">
+                    <Link className="dropdown-item" href="#">
+                      Lab Test
+                    </Link>
+                    <Link className="dropdown-item" href="#">
+                      Radiology
+                    </Link>
+                    <Link className="dropdown-item" href="#">
+                      PET-CT
+                    </Link>
+                    <Link className="dropdown-item" href="#">
                       Genetic Testing
-                    </NavDropdown.Item>
+                    </Link>
                   </NavDropdown>
 
-                  <Nav.Link href="pharmacy">Pharmacy</Nav.Link>
+                  <Link href="/pharmacy" className="nav-link">
+                    Pharmacy
+                  </Link>
 
-                  <Nav.Link href="#">Ask A Doctor</Nav.Link>
+                  <Link className="nav-link" href="#">
+                    Ask A Doctor
+                  </Link>
 
                   <NavDropdown title="Home Care" id="navbarScrollingDropdown3">
-                    <NavDropdown.Item href="#">
+                    <Link className="dropdown-item" href="#">
                       Apollo Home Care
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#">Home Care</NavDropdown.Item>
-                    <NavDropdown.Item href="#">
+                    </Link>
+                    <Link className="dropdown-item" href="#">
+                      Home Care
+                    </Link>
+                    <Link className="dropdown-item" href="#">
                       Remote Health Monitoring
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#">
+                    </Link>
+                    <Link className="dropdown-item" href="#">
                       Home Health Network
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#">Elder Care</NavDropdown.Item>
+                    </Link>
+                    <Link className="dropdown-item" href="#">
+                      Elder Care
+                    </Link>
                   </NavDropdown>
 
                   <NavDropdown title="Corporate" id="navbarScrollingDropdown4">
-                    <NavDropdown.Item href="#">Corporate</NavDropdown.Item>
-                    <NavDropdown.Item href="#">
+                    <Link className="dropdown-item" href="#">
+                      Corporate
+                    </Link>
+                    <Link className="dropdown-item" href="#">
                       Employee Assistance Program (EAP)
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#">
+                    </Link>
+                    <Link className="dropdown-item" href="#">
                       Financial Wellness
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#">
+                    </Link>
+                    <Link className="dropdown-item" href="#">
                       Disease Management
-                    </NavDropdown.Item>
+                    </Link>
                   </NavDropdown>
                 </Nav>
                 <Dropdown>
@@ -112,8 +132,12 @@ export default function Header() {
                     My Account
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
-                    <Dropdown.Item href="#">My Account</Dropdown.Item>
-                    <Dropdown.Item href="#">Logout</Dropdown.Item>
+                    <Link className="dropdown-item" href="#">
+                      My Account
+                    </Link>
+                    <Link className="dropdown-item" href="#">
+                      Logout
+                    </Link>
                   </Dropdown.Menu>
                 </Dropdown>
               </Navbar.Collapse>
@@ -187,40 +211,58 @@ export default function Header() {
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="web-overflow">
                   <NavDropdown title="Second Opinion" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#">Second Opinion</NavDropdown.Item>
-                    <NavDropdown.Item href="#">
+                    <Link className="dropdown-item" href="#">
+                      Second Opinion
+                    </Link>
+                    <Link className="dropdown-item" href="#">
                       International Second Opinion
-                    </NavDropdown.Item>
+                    </Link>
                   </NavDropdown>
-                  <Nav.Link href="#">Fitness Diet & Nutrition</Nav.Link>
+                  <Link className="nav-link" href="#">
+                    Fitness Diet & Nutrition
+                  </Link>
                   <NavDropdown title="Hospitals" id="basic-nav-dropdown2">
-                    <NavDropdown.Item href="#">Hospitals</NavDropdown.Item>
-                    <NavDropdown.Item href="#">
+                    <Link className="dropdown-item" href="#">
+                      Hospitals
+                    </Link>
+                    <Link className="dropdown-item" href="#">
                       Ambulance Services
-                    </NavDropdown.Item>
+                    </Link>
                   </NavDropdown>
                   <NavDropdown title="Health Plans" id="basic-nav-dropdown3">
-                    <NavDropdown.Item href="#">Health Plans</NavDropdown.Item>
-                    <NavDropdown.Item href="#">Maternity</NavDropdown.Item>
-                    <NavDropdown.Item href="#">Mental Health</NavDropdown.Item>
-                    <NavDropdown.Item href="#">
+                    <Link className="dropdown-item" href="#">
+                      Health Plans
+                    </Link>
+                    <Link className="dropdown-item" href="#">
+                      Maternity
+                    </Link>
+                    <Link className="dropdown-item" href="#">
+                      Mental Health
+                    </Link>
+                    <Link className="dropdown-item" href="#">
                       Health Insurance
-                    </NavDropdown.Item>
+                    </Link>
                   </NavDropdown>
                   <NavDropdown
                     title="Surgery Appointment"
                     id="basic-nav-dropdown4"
                   >
-                    <NavDropdown.Item href="#">
+                    <Link className="dropdown-item" href="#">
                       Surgery Appointment
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#">
+                    </Link>
+                    <Link className="dropdown-item" href="#">
                       Get A Quote Medical Treatment
-                    </NavDropdown.Item>
+                    </Link>
                   </NavDropdown>
-                  <Nav.Link href="#">Crowd Funding</Nav.Link>
-                  <Nav.Link href="#">Web Stories</Nav.Link>
-                  <Nav.Link href="#">Blog</Nav.Link>
+                  <Link className="nav-link" href="#">
+                    Crowd Funding
+                  </Link>
+                  <Link className="nav-link" href="#">
+                    Web Stories
+                  </Link>
+                  <Link className="nav-link" href="#">
+                    Blog
+                  </Link>
                 </Nav>
               </Navbar.Collapse>
             </Container>
@@ -231,7 +273,7 @@ export default function Header() {
       {/* Mobile Menu */}
       <Offcanvas show={show} onHide={handleClose} className="mobile-menu">
         <Offcanvas.Header closeButton>
-          <Link href="#" className="logo">
+          <Link href="/" className="logo">
             <Image
               src="/images/logo.webp"
               width={158}
@@ -242,76 +284,138 @@ export default function Header() {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <Nav>
-            <Nav.Link href="#" className="active">
+            <Link className="nav-link active" href="/">
               Home
-            </Nav.Link>
+            </Link>
 
             <NavDropdown title="Consult Doctors" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#">Consult Doctors</NavDropdown.Item>
-              <NavDropdown.Item href="#">Doctor Enquiry</NavDropdown.Item>
-              <NavDropdown.Item href="#">Doctor Listing</NavDropdown.Item>
-              <NavDropdown.Item href="#">Doctor Registration</NavDropdown.Item>
+              <Link className="dropdown-item" href="#">
+                Consult Doctors
+              </Link>
+              <Link className="dropdown-item" href="#">
+                Doctor Enquiry
+              </Link>
+              <Link className="dropdown-item" href="#">
+                Doctor Listing
+              </Link>
+              <Link className="dropdown-item" href="#">
+                Doctor Registration
+              </Link>
             </NavDropdown>
 
             <NavDropdown title="Lab Test" id="navbarScrollingDropdown2">
-              <NavDropdown.Item href="#">Lab Test</NavDropdown.Item>
-              <NavDropdown.Item href="#">Radiology</NavDropdown.Item>
-              <NavDropdown.Item href="#">PET-CT</NavDropdown.Item>
-              <NavDropdown.Item href="#">Genetic Testing</NavDropdown.Item>
+              <Link className="dropdown-item" href="#">
+                Lab Test
+              </Link>
+              <Link className="dropdown-item" href="#">
+                Radiology
+              </Link>
+              <Link className="dropdown-item" href="#">
+                PET-CT
+              </Link>
+              <Link className="dropdown-item" href="#">
+                Genetic Testing
+              </Link>
             </NavDropdown>
 
-            <Nav.Link href="pharmacy">Pharmacy</Nav.Link>
+            <Link className="nav-link" href="/pharmacy">
+              Pharmacy
+            </Link>
 
-            <Nav.Link href="#">Ask A Doctor</Nav.Link>
+            <Link className="nav-link" href="#">
+              Ask A Doctor
+            </Link>
 
             <NavDropdown title="Home Care" id="navbarScrollingDropdown3">
-              <NavDropdown.Item href="#">Apollo Home Care</NavDropdown.Item>
-              <NavDropdown.Item href="#">Home Care</NavDropdown.Item>
-              <NavDropdown.Item href="#">
+              <Link className="dropdown-item" href="#">
+                Apollo Home Care
+              </Link>
+              <Link className="dropdown-item" href="#">
+                Home Care
+              </Link>
+              <Link className="dropdown-item" href="#">
                 Remote Health Monitoring
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#">Home Health Network</NavDropdown.Item>
-              <NavDropdown.Item href="#">Elder Care</NavDropdown.Item>
+              </Link>
+              <Link className="dropdown-item" href="#">
+                Home Health Network
+              </Link>
+              <Link className="dropdown-item" href="#">
+                Elder Care
+              </Link>
             </NavDropdown>
 
             <NavDropdown title="Corporate" id="navbarScrollingDropdown4">
-              <NavDropdown.Item href="#">Corporate</NavDropdown.Item>
-              <NavDropdown.Item href="#">
+              <Link className="dropdown-item" href="#">
+                Corporate
+              </Link>
+              <Link className="dropdown-item" href="#">
                 Employee Assistance Program (EAP)
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#">Financial Wellness</NavDropdown.Item>
-              <NavDropdown.Item href="#">Disease Management</NavDropdown.Item>
+              </Link>
+              <Link className="dropdown-item" href="#">
+                Financial Wellness
+              </Link>
+              <Link className="dropdown-item" href="#">
+                Disease Management
+              </Link>
             </NavDropdown>
             <NavDropdown title="Second Opinion" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#">Second Opinion</NavDropdown.Item>
-              <NavDropdown.Item href="#">
+              <Link className="dropdown-item" href="#">
+                Second Opinion
+              </Link>
+              <Link className="dropdown-item" href="#">
                 International Second Opinion
-              </NavDropdown.Item>
+              </Link>
             </NavDropdown>
-            <Nav.Link href="#">Fitness Diet & Nutrition</Nav.Link>
+            <Link className="nav-link" href="#">
+              Fitness Diet & Nutrition
+            </Link>
             <NavDropdown title="Hospitals" id="basic-nav-dropdown2">
-              <NavDropdown.Item href="#">Hospitals</NavDropdown.Item>
-              <NavDropdown.Item href="#">Ambulance Services</NavDropdown.Item>
+              <Link className="dropdown-item" href="#">
+                Hospitals
+              </Link>
+              <Link className="dropdown-item" href="#">
+                Ambulance Services
+              </Link>
             </NavDropdown>
             <NavDropdown title="Health Plans" id="basic-nav-dropdown3">
-              <NavDropdown.Item href="#">Health Plans</NavDropdown.Item>
-              <NavDropdown.Item href="#">Maternity</NavDropdown.Item>
-              <NavDropdown.Item href="#">Mental Health</NavDropdown.Item>
-              <NavDropdown.Item href="#">Health Insurance</NavDropdown.Item>
+              <Link className="dropdown-item" href="#">
+                Health Plans
+              </Link>
+              <Link className="dropdown-item" href="#">
+                Maternity
+              </Link>
+              <Link className="dropdown-item" href="#">
+                Mental Health
+              </Link>
+              <Link className="dropdown-item" href="#">
+                Health Insurance
+              </Link>
             </NavDropdown>
             <NavDropdown title="Surgery Appointment" id="basic-nav-dropdown4">
-              <NavDropdown.Item href="#">Surgery Appointment</NavDropdown.Item>
-              <NavDropdown.Item href="#">
+              <Link className="dropdown-item" href="#">
+                Surgery Appointment
+              </Link>
+              <Link className="dropdown-item" href="#">
                 Get A Quote Medical Treatment
-              </NavDropdown.Item>
+              </Link>
             </NavDropdown>
-            <Nav.Link href="#">Crowd Funding</Nav.Link>
-            <Nav.Link href="#">Web Stories</Nav.Link>
-            <Nav.Link href="#">Blog</Nav.Link>
+            <Link className="nav-link" href="#">
+              Crowd Funding
+            </Link>
+            <Link className="nav-link" href="#">
+              Web Stories
+            </Link>
+            <Link className="nav-link" href="#">
+              Blog
+            </Link>
 
             <NavDropdown title="My Account" id="navbarScrollingDropdown5">
-              <NavDropdown.Item href="#">My Account</NavDropdown.Item>
-              <NavDropdown.Item href="#">Logout</NavDropdown.Item>
+              <Link className="dropdown-item" href="#">
+                My Account
+              </Link>
+              <Link className="dropdown-item" href="#">
+                Logout
+              </Link>
             </NavDropdown>
           </Nav>
           <ul className="menu-footer-links">

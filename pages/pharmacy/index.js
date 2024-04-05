@@ -172,7 +172,7 @@ export default function Home() {
                   buttonName="View All"
                   buttonIcon={<FaArrowRight />}
                   buttonClass="btn web-btn2 with-icon"
-                  buttonLink="#"
+                  buttonLink="pharmacy/listing"
                 />
               </h1>
               <Carousel

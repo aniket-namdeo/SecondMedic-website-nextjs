@@ -1485,3 +1485,601 @@
   width: calc(50% - 7.5px);
 }
 /* Pharmacy Listing Work End */
+
+/* doctor consult banner work start */
+
+.doctor-consult-banner .banner-right-icon {
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.doctor-consult-banner .right-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.doctor-consult-banner .right-box .top-badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #97f8e5;
+  padding: 6px 28px 7px;
+  border-bottom-right-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  white-space: nowrap;
+  line-height: 1;
+  font-family: var(--fontRegular);
+}
+
+.doctor-consult-banner .right-box h4 {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.doctor-consult-banner .right-box h4 span {
+  padding: 0 0.25rem;
+  background-color: #ff0100;
+  border-radius: 5px;
+  color: var(--whitecolor);
+  line-height: 1;
+}
+
+/* doctor consult banner work end */
+
+/* Doctor Consultation Page CSS Starts */
+
+.video-consultation-landing-banner .box {
+  box-shadow: 0 0 16px -3px rgb(0 0 0/28%);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.video-consultation-landing-banner .box .col-md-7 .content_img {
+  margin-left: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.video-consultation-landing-banner .box .col-md-7 .my_content * {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .video-consultation-landing-banner .box {
+    padding: 0px;
+  }
+
+  .video-consultation-landing-banner .box .col-md-7 .content_img {
+    margin-top: 10px;
+    margin-left: 0;
+    padding: 10px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .video-consultation-landing-banner .box .col-md-7 .my_content * {
+    margin-bottom: 20px;
+  }
+
+  .video-consultation-landing-banner .box .col-md-5 img {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+.video-consultation-landing-banner .box .content_img img {
+  width: 150px;
+  height: 150px;
+}
+
+.video-consultation-landing-banner .box .float-right {
+  width: 376px;
+  height: 251px;
+}
+
+@media (max-width: 991px) {
+  .video-consultation-landing-banner .box .float-right {
+    width: 290px !important;
+    height: 193px;
+  }
+}
+
+@media (max-width: 767px) {
+  .video-consultation-landing-banner .box .my_content {
+    width: 80%;
+    text-align: left;
+  }
+  .video-consultation-landing-banner .box .my_content h2 {
+    font-size: 16px;
+    margin-bottom: 10px !important;
+  }
+  .video-consultation-landing-banner .box .my_content h5 {
+    margin-bottom: 10px !important;
+  }
+  .video-consultation-landing-banner .box .my_content .btn {
+    margin-bottom: 10px !important;
+  }
+  .video-consultation-landing-banner .box .content_img img {
+    position: absolute;
+    top: 24px;
+    right: 22px;
+    width: 70px !important;
+    height: 70px !important;
+  }
+}
+
+/* Doctor Consultation Page CSS Ends */
+
+/* abha section work start */
+
+.abha-create-now .box {
+  background-color: var(--greencolor);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.abha-create-now .box:before {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  background-color: var(--whitecolor);
+  border: 4px solid #393939;
+  border-radius: 50%;
+  left: -59px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.abha-create-now .box .nha-logo {
+  height: 55px;
+  object-fit: contain;
+  z-index: 1;
+  position: relative;
+}
+
+.abha-create-now .box .text {
+  padding-left: 20px;
+}
+
+.abha-create-now .box h4 {
+  font-weight: bold;
+  font-size: 28px;
+  color: white;
+}
+
+.abha-create-now .box p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.abha-create-now .box .btn:hover {
+  background-color: var(--white) !important;
+  color: var(--greencolor) !important;
+}
+
+.abha-create-now .box .right-img {
+  width: 270px;
+  height: 200px;
+  margin: -20px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .abha-create-now .box:before {
+    left: -128px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .abha-create-now .box:before {
+    width: 300px;
+    height: 300px;
+    left: -46px;
+  }
+
+  .abha-create-now .box .text {
+    padding-left: 10px;
+  }
+
+  .abha-create-now .box h4 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .abha-create-now .box {
+    text-align: center;
+  }
+
+  .abha-create-now .box:before {
+    left: 50%;
+    top: -153px;
+    transform: translate(-50%, 0);
+  }
+
+  .abha-create-now .box .text {
+    padding-left: 0px;
+  }
+
+  .abha-create-now .box h4 {
+    font-size: 22px;
+    line-height: 28px;
+    margin-top: 65px;
+    margin-bottom: 10px;
+  }
+
+  .abha-create-now .box p {
+    line-height: 22px;
+  }
+}
+
+/* abha section work end */
+
+/* consult-doctor-searchbar work start */
+
+.consult-doctor-searchbar {
+  padding-bottom: 60px;
+}
+
+.consult-doctor-searchbar form {
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  background-color: var(--white);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 7%);
+}
+
+.doctor-specialties .box .box-body p {
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+}
+
+.consult-best-doctors .box {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s 0s linear;
+}
+
+.consult-best-doctors .box:hover {
+  border-color: var(--greencolor);
+}
+
+.consult-best-doctors .box img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin: 0px auto 15px;
+}
+
+.consult-best-doctors .box .box-h {
+  font-size: 15px;
+  line-height: 19px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-bottom: 5px;
+}
+
+.consult-best-doctors .box .price {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .consult-best-doctors .box .price {
+    font-size: 14px;
+  }
+
+  .consult-best-doctors .btn {
+    min-width: unset;
+  }
+}
+
+/* consult-doctor-searchbar work end */
+
+/* Start doctors Consultdoctor Css */
+
+.consultdoctor-doctors .box {
+  background-color: white;
+  border: 1px solid #878787;
+  border-radius: 10px;
+  transition: all 0.3s 0s linear;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+}
+
+.consultdoctor-doctors .box:hover {
+  border-color: var(--greencolor);
+  background-color: #eee;
+}
+
+.consultdoctor-doctors .box .live-img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 15px;
+  width: auto;
+}
+
+.consultdoctor-doctors .box .box-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.consultdoctor-doctors .box .box-top .dr-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--greencolor);
+}
+
+.consultdoctor-doctors .box .box-top .dr-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.consultdoctor-doctors .box .box-top .dr-details {
+  width: calc(100% - 85px);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.consultdoctor-doctors .box .box-top .dr-details .badge {
+  background-color: var(--lightgreencolor);
+  font-size: 10px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+}
+
+.consultdoctor-doctors .box .box-top .dr-details h5 {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.consultdoctor-doctors .box .box-top .dr-details h5 span {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.consultdoctor-doctors .box .box-top .dr-details h5 .verified {
+  height: 20px;
+  width: 61px;
+  object-fit: contain;
+  margin-left: 5px;
+}
+
+.consultdoctor-doctors .box .box-top .dr-details .dr-info {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  margin-bottom: 5px;
+}
+
+.consultdoctor-doctors .box .box-top .dr-details .dr-exp {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.consultdoctor-doctors .box .box-top .dr-details .dr-exp li {
+  list-style: none;
+  margin-right: 15px;
+}
+
+.consultdoctor-doctors .box .box-top .dr-details .dr-exp li i {
+  opacity: 0.5;
+}
+
+.consultdoctor-doctors .box hr {
+  margin: 15px 0px;
+}
+
+.consultdoctor-doctors .box .box-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.consultdoctor-doctors .box .box-bottom p {
+  width: 50%;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0px;
+}
+
+.consultdoctor-doctors .box .box-bottom p b {
+  font-size: 14px;
+}
+
+.consultdoctor-doctors .box .web-btn {
+  margin: 20px -20px -20px;
+  border-radius: 0px;
+  width: calc(100% + 40px);
+}
+
+@media (max-width: 768px) {
+  .consultdoctor-doctors .d-flex {
+    display: block !important;
+  }
+
+  .consultdoctor-doctors .box {
+    padding: 15px;
+  }
+
+  .consultdoctor-doctors .box .web-btn {
+    margin: 15px -15px -15px;
+    width: calc(100% + 30px);
+  }
+}
+
+.consultdoctor-doctors .img_doc_verified {
+  height: 45px !important;
+  display: inline-block !important;
+  object-fit: unset !important;
+  width: auto !important;
+  padding: 5px !important;
+  margin-top: 5px !important;
+}
+
+/* End doctors Consultdoctor Css */
+
+/*HOW IT WORKS new START*/
+.howitworks {
+  background-color: white;
+}
+
+.howitworks .web-h {
+  margin-bottom: 0px;
+}
+
+.howitworks .box {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  flex-direction: column;
+}
+
+.howitworks .box:after {
+  content: "";
+  position: absolute;
+  width: 83%;
+  height: 1px;
+  border-top: 1px dashed var(--greencolor);
+  top: 40px;
+  left: 64%;
+  z-index: 1;
+}
+.howitworks .box.no-border:after {
+  display: none;
+}
+
+.howitworks .box .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px dashed var(--greencolor);
+  background-color: white;
+  color: white;
+  position: relative;
+  padding: 20px;
+  z-index: 2;
+  margin-bottom: 15px;
+}
+
+.howitworks .box .icon:before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background-color: var(--greencolor);
+}
+
+.howitworks .box .icon img {
+  width: 75px;
+  height: 83px;
+  object-fit: contain;
+  z-index: 2;
+  border-radius: 0px 0px 50% 50%;
+  margin-top: -10px;
+}
+
+.howitworks .box .icon svg {
+  position: relative;
+  font-size: 30px;
+}
+
+.howitworks .box .howitworkscontent h3 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.howitworks .box .howitworkscontent p {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0px;
+}
+
+@media (max-width: 767px) {
+  .howitworks .web-h {
+    margin-bottom: 5px;
+  }
+
+  .howitworks .box {
+    margin-top: 15px;
+  }
+
+  .howitworks .box:after {
+    display: none;
+  }
+
+  .howitworks .box .icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+  }
+
+  .howitworks .box .icon img {
+    width: 55px;
+    height: 61px;
+  }
+
+  .howitworks .box .howitworkscontent h3 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .howitworks .box .howitworkscontent p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+/*HOW IT WORKS new END*/

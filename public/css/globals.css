@@ -112,6 +112,15 @@ a:hover {
 .section-heading.with-btn .heading {
   width: 70%;
 }
+
+.section-heading .sub-heading {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: var(--fontRegular);
+  margin-bottom: 0;
+  margin-top: 10px;
+  color: #434343;
+}
 .small-section-padding .section-heading {
   margin-bottom: 30px;
 }
@@ -180,6 +189,9 @@ a:hover {
   font-size: 14px;
   box-shadow: none !important;
   font-family: var(--fontBold);
+}
+.float-right {
+  float: right !important;
 }
 .card {
   border-color: #ddd;

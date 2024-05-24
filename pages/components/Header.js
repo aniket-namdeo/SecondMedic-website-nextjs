@@ -53,7 +53,7 @@ export default function Header() {
                     title="Consult Doctors"
                     id="navbarScrollingDropdown"
                   >
-                    <Link className="dropdown-item" href="#">
+                    <Link className="dropdown-item" href="/consult">
                       Consult Doctors
                     </Link>
                     <Link className="dropdown-item" href="#">
